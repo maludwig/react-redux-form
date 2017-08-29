@@ -6,8 +6,11 @@ node_js:
   - "7"
   - "stable"
 
-before_install:
-  - yarn config set ignore-scripts true
+# before_install:
+#   - yarn config set ignore-scripts true
+
+install:
+  - npm install --ignore-scripts
 
 script:
   - npm test
@@ -15,7 +18,10 @@ script:
   - npm run build
   - npm run tsdef
 
-cache: yarn
+# cache: yarn
+cache:
+  directories:
+    - node_modules
 
 branches:
   except:
