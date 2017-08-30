@@ -6,11 +6,8 @@ node_js:
   - "7"
   - "stable"
 
-# before_install:
-#   - yarn config set ignore-scripts true
-
-install:
-  - npm install --ignore-scripts
+before_install:
+  - npm config set ignore-scripts true
 
 script:
   - npm test
