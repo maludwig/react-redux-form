@@ -6,8 +6,8 @@ node_js:
   - "7"
   - "stable"
 
-before_install:
-  - npm config set ignore-scripts true
+# before_install:
+#   - npm config set ignore-scripts true
 
 script:
   - npm test
