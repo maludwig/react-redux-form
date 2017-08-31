@@ -10,15 +10,15 @@ node_js:
 #   - npm config set ignore-scripts true
 
 script:
-  - npm test
-  - npm run lint
-  - npm run build
-  - npm run tsdef
+  - yarn test
+  - yarn run lint
+  - yarn run build
+  - yarn run tsdef
 
-# cache: yarn
-cache:
-  directories:
-    - node_modules
+cache: yarn
+# cache:
+#   directories:
+#     - node_modules
 
 branches:
   except:
